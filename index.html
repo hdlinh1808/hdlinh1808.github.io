@@ -27,7 +27,7 @@
             <ul class="navbar-nav">
               <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
               <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Project</a></li>
               <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
               <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
             </ul>
@@ -162,8 +162,8 @@
               <div class="nav-align-center">
                 <ul class="nav nav-pills nav-pills-primary" role="tablist">
                   <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#all" role="tablist"><i class="fa fa-laptop" aria-hidden="true"></i></a></li>
-                  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#graphic-design" role="tablist"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
-                  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Photography" role="tablist"><i class="fa fa-camera" aria-hidden="true"></i></a></li>
+                  <!-- <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#graphic-design" role="tablist"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+                  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Photography" role="tablist"><i class="fa fa-camera" aria-hidden="true"></i></a></li> -->
                 </ul>
               </div>
             </div>
@@ -188,7 +188,7 @@
                               Build a centralize app to manage accessibility of some apps: jitsi, rocketchat, nextcloud, wordpress admin (child app) using AWS cognito account.</p>
 
                             <div><b>Summarize of this system</b>:
-                              <div class="indent">- Centralize app include 2 type of member: admin and neutral. Any admin can grant neutral member for admin.</div>
+                              <div class="indent">- Centralize app include two type of member: admin and neutral. Any admin can grant neutral member for admin.</div>
                               <div class="indent">- Each child can login with AWS account.</div>
                               <div class="indent">- From centralize app, admin can disable, enable accessibility to child app of any account using API of each child app.</div>
                               <div class="indent">- AWS account connect with google and facebook.</div>
@@ -241,18 +241,21 @@
                           <div class="content">
                             <p><b>Programming Languages</b>: <span class="badge badge-primary">JavaScript</span> <span class="badge badge-primary">HTML</span> <span class="badge badge-primary">CSS</span> <span class="badge badge-primary">Java</span></p>
                             <p><b>Databases</b>: <span class="badge badge-primary">MySQL</span> <span class="badge badge-primary">Kyoto cabinet</span></p>
-                            <p><b>Framework / Library</b>:<span class="badge badge-primary">Jetty</span> <span class="badge badge-primary">Thrift</span> <span class="badge badge-primary">Bootstrap3</span> <span class="badge badge-primary">DataTable.js</span> <span class="badge badge-primary">HighChart.js</span> </p>
+                            <p><b>Framework / Library</b>:<span class="badge badge-primary">Jetty</span> <span class="badge badge-primary">Thrift</span> <span class="badge badge-primary">Bootstrap3</span> <span class="badge badge-primary">DataTable.js</span> <span class="badge badge-primary">HighChart.js</span> <span class="badge badge-primary">Zalo internal lib</span></p>
                             <p><b>Project description</b>:
                               This project is used to visualize statistics of DBM, message broker services and some internal data, make some alert notifications and change some config with GUI. Besides, I've also developed some anomaly and predict system for data of a few specified services.
-                              </p>
+                            </p>
 
                             <div><b>Summarize of the implemented feature</b>:
-                              <div class="indent">- .</div>
-                              <div class="indent">- Implement filter sidebar with choices of gender, size and sort options. </div>
-                              <div class="indent">- With each search keyword or options of sort or filter, URL with change corresponding. And in contrast, each URL with different parameters, web will display respectively.</div>
+                              <div class="indent">- Build the user system: login/logout (use Oauth2), session, user level (admin and neutral), roles, and permission of each role.</div>
+                              <div class="indent">- Display information, config, setting of services and implement add/delete/update functions respectively. </div>
+                              <div class="indent">- Collect data and use available API to query data, then visualize in the website. I've used some JS libraries such as <b>HighChart.js, Datable.js, Select2.js</b> with lazy loading, server-search and paging if needed.</div>
+                              <div class="indent">- Detect anomaly of some time series data and predict trends of a number of statistics during holidays in the near future. </div>
+                              <div class="indent">- Develop some alert systems to warning about the status of services.</div>
+                              <div class="indent">- Develop dark mode for adminlte2 template compatible with some JS libraries.</div>
                             </div>
                             <p></p>
-                            
+                            <p>This app using adminlte2 in frontend.</p>
                           </div>
                         </figcaption>
                       </figure>
@@ -295,7 +298,7 @@
                           <div class="content">
                             <p><b>Programming Languages</b>: <span class="badge badge-primary">Java</span> <span class="badge badge-primary">Go</span> <span class="badge badge-primary">Javasript</span> <span class="badge badge-primary">Typescript</span> </p>
                             <p><b>Databases</b>: <span class="badge badge-primary">Kyoto cabinet</span></p>
-                            <p><b>Framework / Library</b>: <span class="badge badge-primary">Grafana V6.7</span> <span class="badge badge-primary">Jetty</span> </p>
+                            <p><b>Framework / Library</b>: <span class="badge badge-primary">Grafana 6.7</span> <span class="badge badge-primary">Jetty</span> </p>
                             <p><b>Project description</b>:
                               Crawl system data and others then store to database. Visualize data and alert with grafana.</p>
 
@@ -316,6 +319,36 @@
                     </div>
 
                     <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                      <figure class="cc-effect"><img src="images/kis/kis-img1.png" alt="Image" />
+                        <figcaption>
+                          <div class="h4 title">Blog Website</div>
+                          <p>Web Development, Java, SpringMVC</p>
+
+                          <div class="content">
+                            <p><b>Programming Languages</b>: <span class="badge badge-primary">JavaScript</span> <span class="badge badge-primary">HTML</span> <span class="badge badge-primary">CSS</span> <span class="badge badge-primary">Java</span></p>
+                            <p><b>Databases</b>: <span class="badge badge-primary">MySQL</span></p>
+                            <p><b>Frameworks / Libraries</b>:<span class="badge badge-primary">SpringMVC 4</span> <span class="badge badge-primary">Hibernate 4</span>
+                              <span class="badge badge-primary">GlassFish </span> <span class="badge badge-primary">Tile 3 </span> <span class="badge badge-primary">Bootstrap 4</span> <span class="badge badge-primary">DataTable.js</span> <span class="badge badge-primary">CKEditor.js</span></p>
+                            <p><b>Project description</b>:
+                              A blog website use Spring MVC Framework.
+                            </p>
+
+                            <div><b>Summarize of the implemented features</b>:
+                              <div class="indent">- Modify HTML and CSS from available template suit to the invidual.</div>
+                              <div class="indent">- Design database, config and deploy the spring app.</div>
+                              <div class="indent">- Implement admin page with full of add/update/remove functions. I used CKEditor.js to support send data to server(include image) under HTML format.</div>
+                            </div>
+                            <p></p>
+                            <!-- <p>
+                              <i>Source: </i>
+                            </p> -->
+
+                          </div>
+                        </figcaption>
+                      </figure>
+                    </div>
+
+                    <!-- <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                       <a>
                         <figure class="cc-effect"><img src="images/project-3.jpg" alt="Image" />
                           <figcaption>
@@ -323,7 +356,8 @@
                             <p>Web Development</p>
                           </figcaption>
                         </figure>
-                      </a></div>
+                      </a>
+                    </div>
                     <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                       <a>
                         <figure class="cc-effect"><img src="images/project-4.jpg" alt="Image" />
@@ -332,7 +366,8 @@
                             <p>Web Development</p>
                           </figcaption>
                         </figure>
-                      </a></div>
+                      </a>
+                    </div> -->
                   </div>
                 </div>
               </div>
